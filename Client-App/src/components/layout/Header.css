@@ -1,0 +1,7 @@
+.brand-name {
+    cursor: pointer;
+}
+
+.auth-options {
+    justify-content: flex-end;
+}

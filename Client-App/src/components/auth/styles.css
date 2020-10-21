@@ -1,0 +1,25 @@
+.Register-form {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 350px;
+    align-items: center;
+}
+
+Form.label {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.button-submit {
+    margin-top: 1rem;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-title {
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+}

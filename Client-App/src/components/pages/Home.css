@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Bree';
+    src: local('Bree Semibold'), local('Bree-Semibold'),
+        url('../misc/fonts/BreeCYR-Semibold.woff2') format('woff2'),
+        url('../misc/fonts/BreeCYR-Semibold.woff') format('woff'),
+        url('../misc/fonts/BreeCYR-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .navbar-brand {
+    font-family: bree, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem !important;
+    color: whitesmoke !important;
+  ;}
+  
+  .navbar {
+    background-color: #6BBFA8 !important;
+  }
+  
+  .nav{
+    justify-content: flex-end;
+  }
+  
