@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "frontend": "cd Client-App $$ npm start",
+    "api": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run Client-App\" \"node index.js\"",
+    "dev": "concurrently --kill-others-on-fail \"npm run api\" \"npm run frontend\"",
     "heroku-postbuild": "cd Client-App && npm install && npm run build"
   },
   "keywords": [],
@@ -13,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
