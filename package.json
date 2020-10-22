@@ -8,8 +8,8 @@
     "api": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run api",
-    "devStart": "concurrently  \"npm run frontend\" \"npm run api\"",
-    "heroku-postbuild": "cd Client-App && npm install && npm run build"
+    "dev": "concurrently \"npm run api\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client-App && npm run build --prefix Client-App"
   },
   "keywords": [],
   "author": "",
