@@ -13,6 +13,11 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
 
+app.get('/*', function(req,res) {
+
+    res.sendFile(path.join(__dirname+'/Client-App/public/index.html'));
+  });
+
 // SET UP MONGOOOSE 
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
