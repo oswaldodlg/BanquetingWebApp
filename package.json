@@ -7,7 +7,7 @@
     "frontend": "cd Client-App && npm start",
     "api": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run api\" \"npm run frontend\"",
+    "start": "concurrently  \"npm run frontend\" \"npm run api\"",
     "heroku-postbuild": "cd Client-App && npm install && npm run build"
   },
   "keywords": [],
