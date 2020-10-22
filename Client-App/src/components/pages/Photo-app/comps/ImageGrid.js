@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import useFirestore from '../hooks/useFirestore';
 import deleteStorage from "./deleteStorage";
 import { motion } from 'framer-motion';
-import { Button, ButtonGroup } from 'react-bootstrap';
-import { faTrash, faEye} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import EditBar from './EditBar';
+import UserContext from '../../../../context/UserContext';
 
 
 export default function ImageGrid({selectedImg, setSelectedImg, retrieveCaption, setRetrieveCaption, isDesktop}) {
     const [isHovered, setHover] = useState(false);
     const { docs } = useFirestore('images');
 
+    const { userData } = useContext(UserContext);
+
     return (
-        
-        <div className="img-grid">
-            
-            { docs && docs.map(doc => (
+        <div className="img-grid">   
+            {docs && docs.map(doc => (
                 <motion.div className="img-wrap"  key={doc.id}
                     layout
                     whileHover={{ opacity: 1 }}
@@ -28,40 +27,9 @@ export default function ImageGrid({selectedImg, setSelectedImg, retrieveCaption,
                         animate ={{ opacity: 1 }}
                         transition={{ delay: 1 }}
                     />
-                {isHovered && (
-                <ButtonGroup    style={{
-                    position: "absolute",
-                    top: "5px",
-                    right: "5px",
-                    }}>
-                        {<Button 
-                        size="sm"
-                        variant="secondary"
-                        onClick={() => {
-                            setSelectedImg(doc.url);
-                            setRetrieveCaption(doc.caption)
-                            setHover(false);
-                        }}
-                        >
-                            <FontAwesomeIcon icon={faEye} />
-                        </Button>}
-                        {/* <Button 
-                        size="sm"
-                        variant="secondary" >
-                            <FontAwesomeIcon icon={faPen} />
-                        </Button> */}
-                       <Button 
-                        size="sm"
-                        variant="secondary" 
-                        onClick={() => deleteStorage({id: doc.id, collection: 'images'})}
-                        >
-                            <FontAwesomeIcon icon={faTrash}
-                            />
-                        </Button>
-                </ButtonGroup>
-             
-                
-                )} 
+
+                {userData.user && (<EditBar setSelectedImg={setSelectedImg} setRetrieveCaption={setRetrieveCaption} setHover={setHover} deleteStorage={deleteStorage} doc={doc} />)} 
+
                 </motion.div>
                 
             ))} 
