@@ -10,6 +10,8 @@ export default function Login() {
     const [password, setPassword] = useState();
     const [error, setError] = useState();
 
+    
+
     const {setUserData} = useContext(UserContext);
     const history = useHistory(); 
 
@@ -18,7 +20,7 @@ export default function Login() {
         try {
             const loginUser = {email, password};
             const loginRes = await Axios.post(
-            "http://localhost:5000/users/login",
+            "/users/login",
             loginUser
             );
             setUserData({
@@ -42,7 +44,7 @@ export default function Login() {
                 <Form.Control type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)} />
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
-                <Button onTouchStart={submit} type="submit" value="submit" className="button-submit">Log in</Button>
+                <Button type="submit" value="submit" className="button-submit">Log in</Button>
             </FormGroup>
         </Form>
     )
