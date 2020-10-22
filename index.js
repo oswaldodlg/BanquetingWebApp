@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require ('mongoose');
+const path = require('path');
 const cors = require('cors');
 require("dotenv").config()
 
@@ -10,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 const PORT = process.env.PORT || 5000;
+app.use('/', express.static(path.join(__dirname, '/Client-App')));
 
 app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
 
