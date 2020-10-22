@@ -42,7 +42,7 @@ export default function Login() {
                 <Form.Control type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)} />
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
-                <Button type="submit" value="submit" className="button-submit">Log in</Button>
+                <button type="submit" value="submit" className="button-submit">Log in</button>
             </FormGroup>
         </Form>
     )
