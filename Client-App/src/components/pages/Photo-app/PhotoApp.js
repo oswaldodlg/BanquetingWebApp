@@ -33,40 +33,6 @@ function PhotoApp() {
            {userData.user && (<UploadForm />)}
            <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption} />
            {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption}/>}
-
-
-        {/* {userData.user ? (
-           <div>
-           <Title/>
-           <UploadForm />
-           <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption} />
-           {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption}/>}
-         </div>
-         )
-          : (
-            <div>
-              <Title/>
-              <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} isDesktop={isDesktop} />
-            </div>
-            )
-        } */}
-
-        {/* {isDesktop ? (
-        <div>
-          <Title/>
-          <UploadForm />
-          <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption} />
-          {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption}/>}
-        </div>
-      ) : (
-        <div>
-          <Title/>
-          <UploadForm />
-          <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} isDesktop={isDesktop} />
-        </div>
-      )} */}
-
-      
     </div>
   );
 }
