@@ -29,8 +29,13 @@ function PhotoApp() {
 
   return (
     <div className="PhotoApp">
+           <Title/>
+           {userData.user && (<UploadForm />)}
+           <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption} />
+           {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} retrieveCaption={retrieveCaption} setRetrieveCaption={setRetrieveCaption}/>}
 
-        {userData.user ? (
+
+        {/* {userData.user ? (
            <div>
            <Title/>
            <UploadForm />
@@ -44,7 +49,7 @@ function PhotoApp() {
               <ImageGrid setSelectedImg={setSelectedImg} selectedImg={selectedImg} isDesktop={isDesktop} />
             </div>
             )
-        }
+        } */}
 
         {/* {isDesktop ? (
         <div>
