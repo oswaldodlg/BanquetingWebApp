@@ -33,13 +33,12 @@ export default function UploadForm() {
                     <span>+</span>
                 </div>
                 {selectedImg && <p>{selectedImg.name}</p>}
-                {console.log(selectedImg)}
                 <input type="text" placeholder="Caption" onChange={e => setCaption(e.target.value)}/>
                 <button type="submit">Upload</button>
             <div className="output">
                 {error && <div className="error"><Alert>{error}</Alert></div>}
                 {file && <div>{file.name}</div>}
-                { file && <ProgressBar file={file} setFile={setFile} caption={caption} setCaption={setCaption}/>}
+                {file && <ProgressBar file={file} setFile={setFile} caption={caption} setCaption={setCaption}/>}
             </div>
         </form>
     )

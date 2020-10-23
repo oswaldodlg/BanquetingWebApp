@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import useStorage from '../hooks/useStorage';
 import LinearProgress from '@material-ui/core/LinearProgress'
 
-const ProgressBar = ({file, setFile, caption, setCaption}) => {
+export default function ProgressBar({file, setFile, caption}) {
     const { progress, url } = useStorage(file, caption);
     
     useEffect(() => {
@@ -12,13 +12,6 @@ const ProgressBar = ({file, setFile, caption, setCaption}) => {
     }, [url, setFile])
 
     return (
-        // <motion.div className="progress-bar" 
-        //     initial={{ width:0 }}
-        //     animate = { { width: progress + '%'}}
-        // >   
-        // </motion.div>
         <LinearProgress value={progress} />
     )
 }
-
-export default ProgressBar;
