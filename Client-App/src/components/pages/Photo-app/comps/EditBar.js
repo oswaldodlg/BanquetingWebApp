@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default function EditBar({setSelectedImg, setRetrieveCaption, isHovered, setHover, doc, deleteStorage}) {
-    if (isHovered){
+ 
         return (
             <ButtonGroup    style={{
                 position: "absolute",
@@ -39,5 +39,4 @@ export default function EditBar({setSelectedImg, setRetrieveCaption, isHovered, 
                     </Button>
             </ButtonGroup> 
         )
-    }
 }
