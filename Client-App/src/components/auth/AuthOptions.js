@@ -11,7 +11,7 @@ export default function AuthOptions(isDesktop) {
     const register = () => history.push("/register");
     const login = () => history.push("/login");
     const experiencias = () => history.push("/experiencias");
-    const informacion = () => history.push("/contacto")
+    const info= () => history.push("/info")
     const inicio = () => history.push('/');
     const logout = () => {
         setUserData({
@@ -30,6 +30,7 @@ export default function AuthOptions(isDesktop) {
                 <>
                     <Nav.Link onClick={inicio}>Inicio</Nav.Link> 
                     <Nav.Link onClick={experiencias}>Experiencias</Nav.Link>
+                    <Nav.Link onClick={info}>Info</Nav.Link>
                 </>
                 )} 
                 <Nav.Link onClick={logout} >Log out</Nav.Link>
@@ -39,7 +40,7 @@ export default function AuthOptions(isDesktop) {
                     <>
                         <Nav.Link onClick={inicio}>Inicio</Nav.Link> 
                         <Nav.Link onClick={experiencias}>Experiencias</Nav.Link>
-                       
+                        <Nav.Link onClick={info}>Info</Nav.Link>
                         <Nav.Link onClick={register} >Register</Nav.Link>
                         <Nav.Link onClick={login}>Login</Nav.Link>
                     </>

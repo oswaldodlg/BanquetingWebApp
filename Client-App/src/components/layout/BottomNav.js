@@ -28,6 +28,7 @@ export default function SimpleBottomNavigation() {
   const history = useHistory();
 
     const experiencias = () => history.push("/experiencias");
+    const info = () => history.push("/info");
     const inicio = () => history.push('/');
 
   return (
@@ -41,7 +42,7 @@ export default function SimpleBottomNavigation() {
     >     <ScrollToTop />
           <BottomNavigationAction onClick={inicio} className="bottom-buttons" label="Inicio" icon={<HomeIcon />} />
           <BottomNavigationAction onClick={experiencias} className="bottom-buttons" label="Experiencias" icon={<FavoriteIcon />} />
-          <BottomNavigationAction className="bottom-buttons" label="Info" icon={<InfoIcon />} />
+          <BottomNavigationAction onClick={info} className="bottom-buttons" label="Info" icon={<InfoIcon />} />
         </BottomNavigation>
   );
 }

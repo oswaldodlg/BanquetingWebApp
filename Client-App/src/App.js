@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import PhotoApp from './components/pages/Photo-app/PhotoApp';
 import Informacion from './components/pages/Banqueting-Inicio/Informacion';
+import Info from './components/pages/Info/Info';
 
 
 export default function App() {
@@ -66,7 +67,7 @@ export default function App() {
                     <Route path="/Login" component={Login} />
                     <Route path="/Register" component={Register} />
                     <Route path="/Experiencias" component={PhotoApp} />
-                    <Route path="/Contacto" component={Informacion} /> 
+                    <Route path="/Info" component={Info} /> 
                 </Switch>
                 {!isDesktop && <BottomNav />}
             </UserContext.Provider>

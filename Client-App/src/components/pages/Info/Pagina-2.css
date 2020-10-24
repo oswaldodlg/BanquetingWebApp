@@ -1,0 +1,57 @@
+.Info .Social {min-height: 168px}
+.Info .u-social-icons-1 {height: 48px; min-height: 16px; width: 121px; min-width: 57px; white-space: nowrap; margin: 54px auto}
+.Info .u-icon-1 {height: 100%}
+.Info .u-icon-2 {height: 100%}.Contacto {background-image: none}
+.Contacto .Social {min-height: 866px}
+.Contacto .u-layout-wrap-1 {width: 1131px; margin: 74px auto 74px 0}
+.Contacto .u-layout-cell-1 {min-height: 372px; background-image: none}
+.Contacto .u-container-layout-1 {padding-left: 20px}
+.Contacto .u-text-1 {font-weight: normal; text-transform: none; margin: 53px 20px 0 0}
+.Contacto .u-text-2 {margin: 20px 184px 0 0}
+.Contacto .u-text-3 {margin: 35px 184px 0 0}
+.Contacto .u-layout-cell-2 {min-height: 372px; background-image: none}
+.Contacto .u-icon-1 {height: 64px; width: 64px; margin: 0 auto 0 239px}
+.Contacto .u-image-1 {background-image: url(np://user.desktop.nicepage.com/Site_75559682/images/default-image.jpg); min-height: 406px}
+.Contacto .u-map-1 {animation-duration: 1000ms}
+.Contacto .u-shape-1 {background-image: none}
+.Contacto .u-layout-cell-4 {min-height: 406px}
+.Contacto .u-form-1 {height: 348px; width: 517px; margin: 40px auto}
+.Contacto .u-form-group-1 {width: 100%}
+.Contacto .u-form-group-2 {width: 100%}
+.Contacto .u-form-group-3 {width: 100%}
+.Contacto .u-form-group-4 {width: 100%}
+.Contacto .u-btn-1 {background-image: none; font-weight: 400; text-transform: uppercase; font-size: 0.875rem} 
+
+@media (max-width: 1199px){ .Contacto .u-layout-wrap-1 {width: 933px}
+.Contacto .u-layout-cell-1 {min-height: 393px}
+.Contacto .u-container-layout-1 {padding-left: 16px; padding-right: 16px}
+.Contacto .u-text-1 {position: relative; font-weight: 400; text-transform: uppercase; margin-right: 16px}
+.Contacto .u-text-2 {position: relative; margin-right: 151px}
+.Contacto .u-text-3 {position: relative; margin-right: 151px}
+.Contacto .u-layout-cell-2 {min-height: 393px}
+.Contacto .u-form-1 {width: 426px} }
+
+@media (max-width: 991px){ .Contacto .u-layout-wrap-1 {width: 714px}
+.Contacto .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
+.Contacto .u-text-1 {margin-right: 10px}
+.Contacto .u-text-2 {margin-right: 96px}
+.Contacto .u-text-3 {margin-right: 96px}
+.Contacto .u-layout-cell-2 {min-height: 394px}
+.Contacto .u-icon-1 {margin-left: auto}
+.Contacto .u-form-1 {width: 326px} }
+
+@media (max-width: 767px){ .Contacto .u-layout-wrap-1 {width: 540px}
+.Contacto .u-container-layout-1 {padding-left: 5px; padding-right: 5px}
+.Contacto .u-text-1 {margin-right: 5px}
+.Contacto .u-text-2 {margin-right: 45px}
+.Contacto .u-text-3 {margin-right: 45px}
+.Contacto .u-layout-cell-2 {min-height: 100px}
+.Contacto .u-form-1 {height: 360px; width: 500px; margin-bottom: -12px} }
+
+@media (max-width: 575px){ .Contacto .u-layout-wrap-1 {width: 340px}
+.Contacto .u-container-layout-1 {padding-left: 0; padding-right: 0}
+.Contacto .u-text-1 {width: auto; margin-top: 58px; margin-right: 4px}
+.Contacto .u-text-2 {margin-top: 15px; margin-right: 15px; margin-left: 2px}
+.Contacto .u-text-3 {margin-right: 15px; margin-left: 2px}
+.Contacto .u-form-1 {width: 340px}
+.Contacto .u-btn-1 {border-style: none} }
