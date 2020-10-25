@@ -11,7 +11,7 @@ export default function ContactForm() {
         e.preventDefault();
         try {
             const sentMsg= {name, email , message}
-            const msgRes = await axios.post("/info", sentMsg);
+            const msgRes = await axios.post("/info/info", sentMsg);
             setResult(msgRes.data);
             setName("");
             setEmail("");
