@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
-import { faTrash, faPen, faEye} from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faEye} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 

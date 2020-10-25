@@ -1,8 +1,9 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 
-import './nicepage.css'
-import './Pagina-2.css'
+
+import './Info.css'
 
 export default function Info() {
     return (
@@ -12,7 +13,6 @@ export default function Info() {
       <div className="u-align-left u-social-icons u-spacing-25 u-text-palette-5-base u-social-icons-1">
         <a
           className="u-social-url"
-          target="_blank"
           href="https://facebook.com/banquetingcelaya/photos/?ref=page_internal"
         >
           <span className="u-icon u-icon-circle u-social-facebook u-social-type-logoColor u-icon-1">
@@ -48,7 +48,6 @@ export default function Info() {
         </a>
         <a
           className="u-social-url"
-          target="_blank"
           href="https://www.instagram.com/banqueting/"
         >
           <span className="u-icon u-icon-circle u-social-instagram u-social-type-logoColor u-icon-2">
@@ -109,6 +108,7 @@ export default function Info() {
     >
       <iframe
         style={{
+          title: "maps3",
           position: "absolute",
           top: 0,
           left: 0,
@@ -193,6 +193,7 @@ export default function Info() {
                     <div className="u-expanded u-grey-light-2 u-map u-map-1">
                       <div className="embed-responsive">
                         <iframe
+                          title = "maps2"
                           className="embed-responsive-item"
                           src="//maps.google.com/maps?output=embed&q=Jaime%20Nuno%20212%20Zona%20Centro.%20Celaya%2C%20Guanajuato%2C%20Mexico&z=10&t=m"
                           data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIySmFpbWUlMjBOdW5vJTIwMjEyJTIwWm9uYSUyMENlbnRyby4lMjBDZWxheWElMkMlMjBHdWFuYWp1YXRvJTJDJTIwTWV4aWNvJTIyJTJDJTIyem9vbSUyMiUzQTEwJTJDJTIydHlwZUlkJTIyJTNBJTIycm9hZCUyMiUyQyUyMmxhbmclMjIlM0ElMjIlMjIlN0Q="
@@ -205,93 +206,7 @@ export default function Info() {
                 <div className="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-4">
                   <div className="u-container-layout">
                     <div className="u-form u-form-1">
-                      <form
-                        action="#"
-                        method="POST"
-                        className="u-block-f8dd-19 u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
-                        source="custom"
-                      >
-                        {/* hidden inputs for siteId and pageId */}
-                        <div className="u-form-group u-form-name u-form-group-1">
-                          <label
-                            htmlFor="name-c08e"
-                            className="u-form-control-hidden u-label"
-                          >
-                            Name
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Nombre"
-                            id="name-c08e"
-                            name="name"
-                            className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                            required
-                          />
-                        </div>
-                        {/* always visible */}
-                        <div className="u-form-email u-form-group u-form-group-2">
-                          <label
-                            htmlFor="email-c08e"
-                            className="u-form-control-hidden u-label"
-                          >
-                            Email
-                          </label>
-                          <input
-                            type="email"
-                            placeholder="Correo Electrónico"
-                            id="email-c08e"
-                            name="email"
-                            className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                            required
-                          />
-                        </div>
-                        <div className="u-form-group u-form-message u-form-group-3">
-                          <label
-                            htmlFor="message-c08e"
-                            className="u-form-control-hidden u-label"
-                          >
-                            Message
-                          </label>
-                          <textarea
-                            placeholder="Escribe tu Mensaje"
-                            rows={4}
-                            cols={50}
-                            id="message-c08e"
-                            name="message"
-                            className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
-                            required
-                            defaultValue={""}
-                          />
-                        </div>
-                        <div className="u-form-group u-form-submit u-form-group-4">
-                          <a
-                            href="#"
-                            className="u-btn u-btn-submit u-button-style u-custom-font u-font-ubuntu u-palette-1-base u-btn-1"
-                          >
-                            ENVIAR
-                            <br />
-                          </a>
-                          <input
-                            type="submit"
-                            defaultValue="submit"
-                            className="u-form-control-hidden"
-                          />
-                        </div>
-                        <div className="u-form-send-message u-form-send-success">
-                          {" "}
-                          Thank you! Your message has been sent.{" "}
-                        </div>
-                        <div className="u-form-send-error u-form-send-message">
-                          {" "}
-                          Unable to send your message. Please fix errors then
-                          try again.{" "}
-                        </div>
-                        <input
-                          type="hidden"
-                          defaultValue
-                          name="recaptchaResponse"
-                        />
-                      </form>
+                     <ContactForm /> 
                     </div>
                   </div>
                 </div>

@@ -13,18 +13,18 @@ function PhotoApp() {
   const [selectedImg, setSelectedImg] = useState(null);
   const [retrieveCaption, setRetrieveCaption] = useState(null);
   // const [retrieveDate, setRetrieveDate] = useState(null);
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 700);
+ // const [isDesktop, setDesktop] = useState(window.innerWidth > 700);
 
   const { userData } = useContext(UserContext);
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 700);
-  };
+  // const updateMedia = () => {
+  //   setDesktop(window.innerWidth > 700);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
+  // useEffect(() => {
+  //   window.addEventListener("resize", updateMedia);
+  //   return () => window.removeEventListener("resize", updateMedia);
+  // });
 
 
   return (

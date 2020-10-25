@@ -12,7 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import PhotoApp from './components/pages/Photo-app/PhotoApp';
-import Informacion from './components/pages/Banqueting-Inicio/Informacion';
 import Info from './components/pages/Info/Info';
 
 

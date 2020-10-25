@@ -36,6 +36,8 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
     console.log("MongoDB connection established")
 });
 
+
 // set up route
 
 app.use("/users", require("./routes/userRouter"))
+app.use("/info", require("./routes/contactFormRouter"))
