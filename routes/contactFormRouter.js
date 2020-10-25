@@ -20,9 +20,8 @@ transporter.verify((error, success) => {
 })
 
 contactRouter.post('/info', (req, res) => {
-    let name = req.body.name
-    let email = req.body.email
-    let message = req.body.message
+    const { name, email, message } = req.body
+    
     let content = `name: ${name} \n email: ${email} \n message: ${message}`
 
     let mail = {

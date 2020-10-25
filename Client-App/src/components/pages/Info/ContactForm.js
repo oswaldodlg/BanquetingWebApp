@@ -10,7 +10,7 @@ export default function ContactForm() {
     const sendEmail = async(e) => {
         e.preventDefault();
         try {
-            const sentMsg= {name, email ,message}
+            const sentMsg= {name, email , message}
             const msgRes = await axios.post("/info", sentMsg);
             setResult(msgRes.data);
             setName("");
@@ -21,6 +21,7 @@ export default function ContactForm() {
                 success: false,
                 message:"Something went wrong. Try again later"
             })
+            console.log(result)
         }
     }
 
@@ -46,7 +47,6 @@ export default function ContactForm() {
             className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
             required
             onChange = {e => setName(e.target.value)}
-            value = {name}
           />
         </div>
         {/* always visible */}
@@ -65,7 +65,6 @@ export default function ContactForm() {
             className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
             required
             onChange = {e => setEmail(e.target.value)}
-            value= {email}
           />
         </div>
         <div className="u-form-group u-form-message u-form-group-3">
@@ -84,7 +83,6 @@ export default function ContactForm() {
             className="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
             required
             onChange = {e => setMessage(e.target.value)}
-            value = {message}
           />
         </div>
         <button type="submit"  className="u-btn u-btn-submit u-button-style u-custom-font u-font-ubuntu u-palette-1-base u-btn-1">ENVIAR</button>
