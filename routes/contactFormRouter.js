@@ -26,8 +26,8 @@ contactRouter.post('/info', (req, res) => {
 
     let mail = {
         from: name,
-        to: "oswaldodlg25@gmail.com", 
-        subject: "Nuevo Mensaje desde Página Web",
+        to: "contacto@banquetingeventos.com", 
+        subject: "Nuevo Mensaje desde Página Web Banqueting",
         text: content
     }
 
