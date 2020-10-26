@@ -20,7 +20,7 @@
 .Contacto .u-form-group-2 {width: 100%}
 .Contacto .u-form-group-3 {width: 100%}
 .Contacto .u-form-group-4 {width: 100%}
-.Contacto .u-btn-1 {background-image: none; font-weight: 400; text-transform: uppercase; font-size: 0.875rem} 
+.Contacto .u-btn-1 {background-image: none; font-weight: 400; text-transform: uppercase; font-size: 0.875rem ; margin: 0.5rem auto;} 
 
 @media (max-width: 1199px){ .Contacto .u-layout-wrap-1 {width: 933px}
 .Contacto .u-layout-cell-1 {min-height: 393px}
@@ -55,3 +55,10 @@
 .Contacto .u-text-3 {margin-right: 15px; margin-left: 2px}
 .Contacto .u-form-1 {width: 340px}
 .Contacto .u-btn-1 {border-style: none} }
+
+.ProgressContactBar {
+          height: 10px;
+          width: 90%;
+          margin: auto;
+          align-items: center;
+}

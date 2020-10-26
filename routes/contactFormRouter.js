@@ -21,7 +21,7 @@ transporter.verify((error, success) => {
 
 contactRouter.post('/info', (req, res) => {
     const { name, email, message } = req.body
-    
+
     let content = `name: ${name} \n email: ${email} \n message: ${message}`
 
     let mail = {
@@ -33,7 +33,7 @@ contactRouter.post('/info', (req, res) => {
 
     transporter.sendMail(mail, (err, data) => {
         if (err){
-            res.json({status: "fail"})
+           res.json({status: "fail"})
         } else {
             res.json({status: "success"})
         }
