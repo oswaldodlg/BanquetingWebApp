@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
 import LinearProgress from '@material-ui/core/LinearProgress';
