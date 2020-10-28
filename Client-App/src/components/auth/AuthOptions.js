@@ -41,8 +41,6 @@ export default function AuthOptions(isDesktop) {
                         <Nav.Link onClick={inicio}>Inicio</Nav.Link> 
                         <Nav.Link onClick={experiencias}>Experiencias</Nav.Link>
                         <Nav.Link onClick={info}>Info</Nav.Link>
-                        <Nav.Link onClick={register} >Register</Nav.Link>
-                        <Nav.Link onClick={login}>Login</Nav.Link>
                     </>
                     )} 
                     {!isDesktop && (
