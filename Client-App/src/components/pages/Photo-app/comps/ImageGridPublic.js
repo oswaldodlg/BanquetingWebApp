@@ -11,8 +11,6 @@ export default function ImageGridPublic({selectedImg, setSelectedImg, retrieveCa
     const [isHovered, setHover] = useState(false);
     const { docs } = useFirestore('images');
 
-    const { userData } = useContext(UserContext);
-
     return (
         <div className="img-grid">   
             {docs && docs.map(doc => (
@@ -33,8 +31,6 @@ export default function ImageGridPublic({selectedImg, setSelectedImg, retrieveCa
                         animate ={{ opacity: 1 }}
                         transition={{ delay: 1 }}
                     />
-                
-                {userData.user && (<EditBar setSelectedImg={setSelectedImg} setRetrieveCaption={setRetrieveCaption} isHovered={isHovered} setHover={setHover} deleteStorage={deleteStorage} doc={doc} />)} 
 
                 </motion.div>
                 
