@@ -26,29 +26,19 @@ export default function AuthOptions(isDesktop) {
             {
             userData.user ?
             <Nav>
-                {isDesktop && (
                 <>
                     <Nav.Link onClick={inicio}>Inicio</Nav.Link> 
                     <Nav.Link onClick={experiencias}>Experiencias</Nav.Link>
                     <Nav.Link onClick={info}>Info</Nav.Link>
                 </>
-                )} 
                 <Nav.Link onClick={logout} >Log out</Nav.Link>
-            </Nav>: (
-
-            <Nav>   {isDesktop && (
+            </Nav>  : (
+            <Nav>  
                     <>
                         <Nav.Link onClick={inicio}>Inicio</Nav.Link> 
                         <Nav.Link onClick={experiencias}>Experiencias</Nav.Link>
                         <Nav.Link onClick={info}>Info</Nav.Link>
                     </>
-                    )} 
-                    {!isDesktop && (
-                    <>
-                        <Nav.Link onClick={register} >Register</Nav.Link>
-                        <Nav.Link onClick={login}>Login</Nav.Link>
-                    </>
-                    )} 
             </Nav>
             )}
         </Nav>

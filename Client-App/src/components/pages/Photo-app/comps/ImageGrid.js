@@ -28,7 +28,7 @@ export default function ImageGrid({selectedImg, setSelectedImg, retrieveCaption,
                         transition={{ delay: 1 }}
                     />
                 
-                {userData.user && (<EditBar setSelectedImg={setSelectedImg} setRetrieveCaption={setRetrieveCaption} isHovered={isHovered} setHover={setHover} deleteStorage={deleteStorage} doc={doc} />)} 
+                {isHovered && (<EditBar setSelectedImg={setSelectedImg} setRetrieveCaption={setRetrieveCaption} isHovered={isHovered} setHover={setHover} deleteStorage={deleteStorage} doc={doc} />)} 
 
                 </motion.div>
                 
