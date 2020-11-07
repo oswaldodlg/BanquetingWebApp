@@ -47,7 +47,7 @@ export default function ContactForm() {
       >
         {/* hidden inputs for siteId and pageId */}
         <div className="u-form-group u-form-name u-form-group-1">
-          <h2>Envíanos un mensaje y te atenderemos</h2>
+          <h2>Envíanos un mensaje</h2>
           {result.success &&  
           <Alert variant="success">
                 <p>{result.message}</p>

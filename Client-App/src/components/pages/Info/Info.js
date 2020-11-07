@@ -1,7 +1,6 @@
-import React from 'react'
-import ContactForm from './ContactForm'
-
-
+import React from 'react';
+import ContactForm from './ContactForm';
+import Pdf from './AvisoPrivacidad_Banqueting.pdf';
 
 import './Info.css'
 
@@ -13,7 +12,7 @@ export default function Info() {
       <div className="u-align-left u-social-icons u-spacing-25 u-text-palette-5-base u-social-icons-1">
         <a
           className="u-social-url"
-          href="https://facebook.com/banquetingcelaya/photos/?ref=page_internal"
+          href="https://facebook.com/banquetingcelaya/"
         >
           <span className="u-icon u-icon-circle u-social-facebook u-social-type-logoColor u-icon-1">
             <svg
@@ -138,10 +137,17 @@ export default function Info() {
                       <br />
                       Celaya, Guanajuato&nbsp;
                       <br />
-                      contacto@banquetingeventos.com
+                      banquetesarqserv_isela@hotmail.com
                       <br />
                       461-616-51-74
                     </p>
+                    <a
+                      href = {Pdf} 
+                      target = "_blank"
+                      className="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-btn-1"
+                    >
+                      Aviso de privacidad
+                    </a>
                   </div>
                 </div>
                 <div className="u-align-left u-container-style u-expand-resize u-layout-cell u-right-cell u-size-30 u-layout-cell-2">

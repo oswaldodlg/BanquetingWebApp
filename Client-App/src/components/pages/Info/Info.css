@@ -21,11 +21,17 @@
 .Contacto .u-form-group-3 {width: 100%}
 .Contacto .u-form-group-4 {width: 100%}
 .Contacto .u-btn-1 {background-image: none; font-weight: 400; text-transform: uppercase; font-size: 0.875rem ; margin: 0.5rem auto;} 
+.Contacto .u-btn-1 {
+    background-image: none;
+    border-style: none none solid;
+    margin: 43px 9px 0 auto;
+    padding: 0;
+  }
 
 @media (max-width: 1199px){ .Contacto .u-layout-wrap-1 {width: 933px}
 .Contacto .u-layout-cell-1 {min-height: 393px}
 .Contacto .u-container-layout-1 {padding-left: 16px; padding-right: 16px}
-.Contacto .u-text-1 {position: relative; font-weight: 400; text-transform: uppercase; margin-right: 16px}
+.Contacto .u-text-1 {position: relative; font-weight: 400;  margin-right: 16px}
 .Contacto .u-text-2 {position: relative; margin-right: 151px}
 .Contacto .u-text-3 {position: relative; margin-right: 151px}
 .Contacto .u-layout-cell-2 {min-height: 393px}
