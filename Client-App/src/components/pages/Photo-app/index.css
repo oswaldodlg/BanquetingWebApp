@@ -148,6 +148,7 @@ form{
   top: 0;
   left: 0;
   contain:size;
+  -webkit-mask-size: contain;
   cursor: pointer;
 }
 
