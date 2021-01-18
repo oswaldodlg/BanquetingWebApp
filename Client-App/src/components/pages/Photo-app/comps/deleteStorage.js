@@ -5,5 +5,4 @@ export default function deleteStorage({id, collection}) {
       .collection(collection)
       .doc(id)
       .delete()
-
 }
