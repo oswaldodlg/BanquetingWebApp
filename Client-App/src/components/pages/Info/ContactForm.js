@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import { Button } from '@material-ui/core';
 
 
 export default function ContactForm() {
@@ -109,7 +110,7 @@ export default function ContactForm() {
           />
         </div>
         {loading && <LinearProgress className="ProgressContactBar" value={progress}/>}
-        <button type="submit"  className="u-btn u-btn-submit u-button-style u-custom-font u-font-ubuntu u-palette-1-base u-btn-1 boton-enviar">ENVIAR</button>
+        <Button type="submit"  className="u-btn u-btn-submit u-button-style u-custom-font u-font-ubuntu u-palette-1-base u-btn-1 boton-enviar">ENVIAR</Button>
       </form>
     )
 }
