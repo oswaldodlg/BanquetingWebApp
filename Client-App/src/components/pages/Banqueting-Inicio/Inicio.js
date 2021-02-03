@@ -4,23 +4,19 @@ import cert1 from './images/cert1.png';
 import cert2 from './images/cert2.png';
 import mision from './images/mision.png';
 import brujula from './images/brujula.png';
-import bn1 from "./images/bn1.jpg";
-import bn19 from "./images/bn19.jpg";
-import bn30 from "./images/bn30.jpeg";
-import bn25 from "./images/bn25.jpeg";
-import bn28 from "./images/bn28.jpeg";
-import bn31 from "./images/bn31.jpg";
 import bn32 from "./images/bn32.jpg";
 import bn33 from "./images/bn33.jpg";
 import bn34 from "./images/bn34.jpg";
-import bn35 from "./images/bn35.jpg";
 import bn37 from "./images/bn37.jpg";
-import bn40 from "./images/bn40.jpg";
+import bn45 from "./images/bn45.jpeg";
+import bn46 from "./images/bn46.jpeg";
+import bn47 from "./images/bn47.jpeg";
+import bn48 from "./images/bn48.jpeg";
 import logoemp1 from "./images/logoemp1.png";
 import logoemp2 from "./images/logoemp2.jpg";
 
 import "./nicepage.css";
-import "./Página-1.css";
+import "./Pagina-1.css";
 
 export default function Inicio() {
     return (
@@ -44,7 +40,7 @@ export default function Inicio() {
                 <div className="u-align-center-xs u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                   <div className="u-container-layout u-container-layout-1">
                     <h2 className="u-text u-text-white u-text-1">Sobre nosotros</h2>
-                    <p className="u-align-justify-lg u-align-justify-md u-align-justify-xl u-text u-text-2">Banqueting Eventos y Catering, es una empresa que nació en 1993.<br />Somos expertos en la creación de eventos sociales, siendo el ámbito gastronómico nuestra principal especialidad. Asimismo, a todos tus eventos proporcionamos capital humano, mobiliario, venue, ambientación, decoración, elementos de seguridad e higiene.<br />Somos miembros de la Cámara Nacional de la Industria de Restaurantes y Alimentos Condimentados (CANIRAC).<br />Contamos con la certificación del Sello de Calidad “Punto Limpio”, emitido por la Secretaría de Turismo.<br />
+                    <p className="u-align-justify-lg u-align-justify-md u-align-justify-xl u-text u-text-2">Banqueting Eventos y Catering, es una empresa que nació en 1993.<br /><br />Somos expertos en la creación de eventos sociales, siendo el ámbito gastronómico nuestra principal especialidad. Asimismo, a todos tus eventos proporcionamos capital humano, mobiliario, venue, ambientación, decoración, elementos de seguridad e higiene.<br /><br />Somos miembros de la Cámara Nacional de la Industria de Restaurantes y Alimentos Condimentados (CANIRAC).<br />Contamos con la certificación del Sello de Calidad “Punto Limpio”, emitido por la Secretaría de Turismo.<br />
                     </p>
                     <img src={cert2} alt className="u-image u-image-default u-image-1" data-image-width={512} data-image-height={512} />
                     <img src={cert1} alt className="u-image u-image-default u-image-2" data-image-width={217} data-image-height={276} />
@@ -114,7 +110,7 @@ export default function Inicio() {
         <div className="u-gallery-inner u-gallery-inner-1" role="listbox">
           <div className="u-effect-fade u-gallery-item">
             <div className="u-back-slide" data-image-width={1440} data-image-height={1440}>
-              <img className="u-back-image u-expanded" src={bn1}/>
+              <img className="u-back-image u-expanded" src={bn47}/>
             </div>
             <div className="u-over-slide u-shading u-over-slide-1">
               <h3 className="u-gallery-heading" />
@@ -132,7 +128,7 @@ export default function Inicio() {
           </div>
           <div className="u-effect-fade u-gallery-item u-gallery-item-3">
             <div className="u-back-slide">
-              <img className="u-back-image u-expanded" src={bn31} />
+              <img className="u-back-image u-expanded" src={bn48} />
             </div>
             <div className="u-over-slide u-shading u-over-slide-3">
               <h3 className="u-gallery-heading" />
@@ -247,7 +243,7 @@ export default function Inicio() {
       <div className="u-align-center u-container-style u-group u-palette-4-base u-group-1">
         <div className="u-container-layout u-valign-middle u-container-layout-4">
           <h2 className="u-text u-text-1">BANQUETES</h2>
-          <p className="u-custom-font u-heading-font u-text u-text-default u-text-2">Toda una experiencia para tus sentidos en cada uno de los tiempos&nbsp;</p>
+          <p className="u-custom-font u-heading-font u-text u-text-default u-text-2">Toda una experiencia para tus sentidos, en cada uno de los tiempos&nbsp;</p>
         </div>
       </div>
     </div>
@@ -272,7 +268,7 @@ export default function Inicio() {
       <div className="u-align-center u-container-style u-expanded-width-xs u-group u-palette-4-base u-group-1">
         <div className="u-container-layout u-valign-middle u-container-layout-4">
           <h2 className="u-text u-text-1">BANQUETES</h2>
-          <p className="u-custom-font u-heading-font u-text u-text-default u-text-2">Toda una experiencia para tus sentidos en cada uno de los tiempos&nbsp;</p>
+          <p className="u-custom-font u-heading-font u-text u-text-default u-text-2">Toda una experiencia para tus sentidos, en cada uno de los tiempos&nbsp;</p>
         </div>
       </div>
     </div>
@@ -338,7 +334,7 @@ export default function Inicio() {
   <section className="u-align-center u-clearfix u-white u-section-11" id="carousel_8ec2">
     <div className="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
       <h1 className="u-text u-text-default u-text-1">Eventos Empresariales</h1>
-      <p className="u-text u-text-2">Hemos realizado eventos empresariales con un aforo de hasta 3800 personas, para empresas del sector industrial como banquero.</p>
+      <p className="u-text u-text-2">Hemos realizado eventos empresariales con un aforo de hasta 3800 personas, tanto para empresas del sector industrial como banquero.</p>
       <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
         <div className="u-gutter-0 u-layout">
           <div className="u-layout-row">
@@ -370,7 +366,7 @@ export default function Inicio() {
       <div className="u-gallery-inner u-gallery-inner-1">
         <div className="u-effect-fade u-gallery-item">
           <div className="u-back-slide" data-image-width={1280} data-image-height={828}>
-            <img className="u-back-image u-expanded" src={bn35} />
+            <img className="u-back-image u-expanded" src={bn45} />
           </div>
           <div className="u-over-slide u-shading u-over-slide-1">
             <h3 className="u-gallery-heading" />
@@ -379,7 +375,7 @@ export default function Inicio() {
         </div>
         <div className="u-effect-fade u-gallery-item">
           <div className="u-back-slide" data-image-width={1280} data-image-height={853}>
-            <img className="u-back-image u-expanded u-back-image-2" src={bn40} />
+            <img className="u-back-image u-expanded u-back-image-2" src={bn46} />
           </div>
           <div className="u-over-slide u-shading u-over-slide-2">
             <h3 className="u-gallery-heading" />
