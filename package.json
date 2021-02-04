@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "frontend": "cd Client-App && npm start",
-    "api": "nodemon index.js",
+    "api": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run api",
     "dev": "concurrently \"npm run api\" \"npm run frontend\"",
