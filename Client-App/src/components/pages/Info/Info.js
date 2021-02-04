@@ -1,96 +1,27 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import Pdf from './AvisoPrivacidad_Banqueting.pdf';
+import Whatsapp from '../Banqueting-Inicio/images/whatsapimg.png'
 
 import './Info.css'
 
 export default function Info() {
     return (
         <div>
-  <section className="Info u-align-center u-clearfix" id="sec-a2ef">
-    <div className="Social u-clearfix u-sheet u-valign-middle">
-      <div className="u-align-left u-social-icons u-spacing-25 u-text-palette-5-base u-social-icons-1">
-        <a
-          className="u-social-url"
-          href="https://facebook.com/banquetingcelaya/"
-        >
-          <span className="u-icon u-icon-circle u-social-facebook u-social-type-logoColor u-icon-1">
-            <svg
-              className="u-svg-link"
-              preserveAspectRatio="xMidYMin slice"
-              viewBox="0 0 112 112"
-              style={{}}
-            >
-              <use
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                xlinkHref="#svg-b651"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              xmlSpace="preserve"
-              className="u-svg-content"
-              viewBox="0 0 112 112"
-              x="0px"
-              y="0px"
-              id="svg-b651"
-              style={{ color: "rgb(59, 89, 152)" }}
-            >
-              <path
-                fill="currentColor"
-                d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"
-              />
-            </svg>
-          </span>
-        </a>
-        <a
-          className="u-social-url"
-          href="https://www.instagram.com/banqueting/"
-        >
-          <span className="u-icon u-icon-circle u-social-instagram u-social-type-logoColor u-icon-2">
-            <svg
-              className="u-svg-link"
-              preserveAspectRatio="xMidYMin slice"
-              viewBox="0 0 112 112"
-              style={{}}
-            >
-              <use
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                xlinkHref="#svg-3989"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              xmlSpace="preserve"
-              className="u-svg-content"
-              viewBox="0 0 112 112"
-              x="0px"
-              y="0px"
-              id="svg-3989"
-              style={{ color: "rgb(197, 54, 164)" }}
-            >
-              <path
-                fill="currentColor"
-                d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"
-              />
-              <path
-                fill="currentColor"
-                d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"
-              />
-              <path
-                fill="currentColor"
-                d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"
-              />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
+          <section className="u-align-center u-clearfix u-section-info" id="sec-a2ef">
+          <div className="u-clearfix u-sheet u-sheet-1">
+            <div className="u-align-left u-social-icons u-spacing-25 u-text-palette-5-base u-social-icons-1">
+              <a className="u-social-url" target="_blank" href="https://facebook.com/banquetingcelaya/"><span className="u-icon u-icon-circle u-social-facebook u-social-type-logoColor u-icon-1"><svg className="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style={{}}><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#svg-b651" /></svg><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" xmlSpace="preserve" className="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-b651" style={{color: 'rgb(59, 89, 152)'}}><path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z" /></svg></span>
+              </a>
+              <a className="u-social-url" target="_blank" href="https://www.instagram.com/banqueting/"><span className="u-icon u-icon-circle u-social-instagram u-social-type-logoColor u-icon-2"><svg className="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style={{}}><use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#svg-3989" /></svg><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" xmlSpace="preserve" className="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-3989" style={{color: 'rgb(197, 54, 164)'}}><path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z" /><path fill="currentColor" d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z" /><path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z" /></svg></span>
+              </a>
+            </div>
+            <a href="https://wa.link/sozy9v">
+            <img src={Whatsapp} alt="WhatsLogo" className="u-image u-image-default u-image-1" data-image-width={360} data-image-height={360}/>
+            </a>
+          </div>
+        </section>
+
   <section
     className="u-clearfix u-palette-1-light-3 u-section-2"
     id="carousel_0cf7"

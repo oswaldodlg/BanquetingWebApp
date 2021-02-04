@@ -28,7 +28,7 @@ export default function ContactForm() {
           const msgRes = await axios.post("/info/info", sentMsg);
           setResult({
             success: true,
-            message: "Tu mensaje ha sido enviado exitosamente"
+            message: "Tu mensaje ha sido enviado exitosamente, nos pondremos en contacto contigo en un plazo menor a 24 Horas"
           });
           setProgress(100);
           setLoading(false);
