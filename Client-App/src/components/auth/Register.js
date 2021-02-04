@@ -49,8 +49,6 @@ export default function Register() {
                 {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)} />
-                <Form.Label>Username</Form.Label>
-                <Form.Control type="text" placeholder="Enter username" onChange = {e => setDisplayName(e.target.value)} />
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
                 <Form.Label>Verify Password</Form.Label>

@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 1000;
 
 //Serve static assets if in production 
 if (process.env.NODE_ENV === "production") {

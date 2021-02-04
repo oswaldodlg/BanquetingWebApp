@@ -7,18 +7,26 @@ import Home from './components/pages/Home';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import UserContext from './context/UserContext';
+import ReviewContext from './context/ReviewContext';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import PhotoApp from './components/pages/Photo-app/PhotoApp';
 import Info from './components/pages/Info/Info';
+import UpdatePassword from './components/auth/UpdatePassword';
+import ResetPassword from './components/auth/ResetPassword';
 
 
 export default function App() {
     const [userData, setUserData] = useState({
         token: undefined,
         user: undefined,
+    });
+
+    const [updateInfo, setUpdateInfo] = useState({
+        id: undefined,
+        email: undefined
     });
 
     const [isDesktop, setDesktop] = useState(window.innerWidth > 700);
@@ -52,6 +60,8 @@ export default function App() {
         checkLoggedIn();
     }, []);
 
+
+
     useEffect(() => {
         window.addEventListener("resize", updateMedia);
         return () => window.removeEventListener("resize", updateMedia);
@@ -59,7 +69,7 @@ export default function App() {
 
     return (
         <BrowserRouter>
-            <UserContext.Provider value={{ userData, setUserData }}>
+            <UserContext.Provider value={{ userData, setUserData}} >
                 <Header isDesktop={isDesktop}/>
                 <Switch>
                     <Route exact path="/" component={Home} />
@@ -67,6 +77,10 @@ export default function App() {
                     <Route path="/Register" component={Register} />
                     <Route path="/Experiencias" component={PhotoApp} />
                     <Route path="/Info" component={Info} /> 
+                    <ReviewContext.Provider value = {{updateInfo, setUpdateInfo}}>
+                        <Route path="/update" component={UpdatePassword} />
+                        <Route path="/resetPassword" component={ResetPassword} />
+                    </ReviewContext.Provider>
                 </Switch>
                 {!isDesktop && <BottomNav />}
             </UserContext.Provider>
