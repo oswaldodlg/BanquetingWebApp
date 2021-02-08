@@ -17,6 +17,38 @@ import bn48 from "./images/bn48.jpeg";
 import logoemp1 from "./images/logoemp1.png";
 import logoemp2 from "./images/logoemp2.jpg";
 
+import boda1 from "./images/boda1.jpg";
+import boda2 from "./images/boda2.jpeg";
+import boda3 from "./images/boda3.jpg";
+import boda4 from "./images/boda4.jpeg";
+import boda5 from "./images/boda5.jpeg";
+import boda6 from "./images/boda6.jpeg";
+
+import xv1 from "./images/xv1.jpeg";
+import xv2 from "./images/xv2.jpeg";
+import xv3 from "./images/xv3.jpg";
+import xv4 from "./images/xv4.jpg";
+
+import grad1 from "./images/grad1.jpg";
+import grad2 from "./images/grad2.jpg";
+import grad3 from "./images/grad3.jpg";
+import grad4 from "./images/grad4.jpg";
+
+import aniv1 from "./images/aniv1.jpg";
+import aniv2 from "./images/aniv2.jpg";
+import aniv3 from "./images/aniv3.jpg";
+
+import emp1 from "./images/emp1.jpg";
+import emp2 from "./images/emp2.jpg";
+import emp3 from "./images/emp3.jpeg";
+import emp4 from "./images/emp4.jpg";
+
+import buffet1 from "./images/buffet1.jpg";
+import buffet2 from "./images/buffet2.jpg";
+import buffet3 from "./images/buffet3.jpg";
+import buffet4 from "./images/buffet4.jpg";
+import buffet5 from "./images/buffet5.jpg";
+
 import "./nicepage.css";
 import "./Pagina-1.css";
 
@@ -47,22 +79,43 @@ export default function Inicio() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 h-50"
-                  src={bn45}
+                  src={boda1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn46}
+                  src={boda2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={boda3}
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn47}
-                  alt="Third slide"
+                  src={boda4}
+                  alt="Fourth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={boda5}
+                  alt="Fifth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={boda6}
+                  alt="Sixth slide"
                 />
               </Carousel.Item>
           </Carousel>
@@ -92,22 +145,29 @@ export default function Inicio() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 h-50"
-                  src={bn45}
+                  src={xv1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn46}
+                  src={xv2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={xv3}
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn47}
-                  alt="Third slide"
+                  src={xv4}
+                  alt="Fourth slide"
                 />
               </Carousel.Item>
           </Carousel>
@@ -137,22 +197,29 @@ export default function Inicio() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 h-50"
-                  src={bn45}
+                  src={grad1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn46}
+                  src={grad2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={grad3}
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn47}
-                  alt="Third slide"
+                  src={grad4}
+                  alt="Fourth slide"
                 />
               </Carousel.Item>
           </Carousel>
@@ -182,21 +249,21 @@ export default function Inicio() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 h-50"
-                  src={bn45}
+                  src={aniv1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn46}
-                  alt="Third slide"
+                  src={aniv2}
+                  alt="Second slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn47}
+                  src={aniv3}
                   alt="Third slide"
                 />
               </Carousel.Item>
@@ -227,21 +294,28 @@ export default function Inicio() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 h-50"
-                  src={bn45}
+                  src={emp1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn46}
+                  src={emp2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={emp3}
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn47}
+                  src={emp4}
                   alt="Third slide"
                 />
               </Carousel.Item>
@@ -272,22 +346,36 @@ export default function Inicio() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 h-50"
-                  src={bn45}
+                  src={buffet1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn46}
+                  src={buffet2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={buffet3}
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={bn47}
-                  alt="Third slide"
+                  src={buffet4}
+                  alt="Fourth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={buffet5}
+                  alt="Fifth slide"
                 />
               </Carousel.Item>
           </Carousel>
