@@ -7,12 +7,13 @@ const User = require("../models/userModel");
 userRouter.post("/register", async (req, res) => {
     try {
     let {email, password, passwordCheck, displayName} = req.body;
+    const regex = `^[a-zA-Z0-9.-]+@[${process.env.EMAIL_SECRET}]*$`
 
     //validation
 
         if (!email || !password || !passwordCheck)
             return res.status(400).json({msg: "Not all fields have been entered"});
-        if (!email.isMatch(process.env.EMAIL_SECRET))
+        if (!email.match(regex))
             return res.status(400).json({msg: 'Invalid email'});
         if (password.length < 5)
             return res.status(400).json({msg: "The password needs to be at least 5 characters long"});
