@@ -7,7 +7,7 @@ const User = require("../models/userModel");
 userRouter.post("/register", async (req, res) => {
     try {
     let {email, password, passwordCheck, displayName} = req.body;
-    const regex = `^[a-zA-Z0-9.-]+@[${process.env.EMAIL_SECRET}]*$`
+    const regex = `^[a-zA-Z0-9.-_]+@[${process.env.EMAIL_SECRET}]*$`
 
     //validation
 
