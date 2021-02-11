@@ -28,9 +28,9 @@ export default function UploadForm() {
 
     return (
         <form onSubmit={submit}>
-                <div  className="label" >
-                    <input type="file" onChange={e => setSelectedImg(e.target.files[0])} />
-                    <span>+</span>
+                <div class="upload-btn-wrapper">
+                    <button class="btn">+</button>
+                    <input type="file" name="myfile" onChange={e => setSelectedImg(e.target.files[0])} />
                 </div>
                 {selectedImg && <p>{selectedImg.name}</p>}
                 <input type="text" placeholder="Caption" onChange={e => setCaption(e.target.value)}/>
@@ -44,3 +44,7 @@ export default function UploadForm() {
     )
 }
 
+{/* <div  className="label" >
+                    <input type="file" id="myfile" name="myfile" onChange={e => setSelectedImg(e.target.files[0])} />
+                    <span>+</span>
+    </div> */}

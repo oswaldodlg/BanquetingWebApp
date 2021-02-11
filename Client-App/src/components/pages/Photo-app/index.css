@@ -79,12 +79,44 @@ body{
 }
 
 /* upload form styles */
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+
+}
+
+.upload-btn-wrapper .btn {
+  border: 2px solid #efb6b2;
+  background: white;
+  color: #efb6b2;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper.btn:hover {
+  color: white;
+  background: #efb6b2;
+}
+
 form{
   margin: 30px auto 10px;
   text-align: center;
 }
 
-.label input{
+/* .label input{
   height: 0;
   width: 0;
   opacity: 0;
@@ -105,7 +137,7 @@ form{
 .label:hover{
   background: var(--primary);
   color: white;
-} */
+} */ 
 
 .output{
   height: 60px;
