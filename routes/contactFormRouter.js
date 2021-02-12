@@ -4,10 +4,10 @@ const nodemailer = require("nodemailer");
 //Set up email contact form
 
 let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'outlook',
     auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASSWORD
+        user: process.env.EMAIL2,
+        pass: process.env.PASSWORD2
     }
 });
 
@@ -19,7 +19,7 @@ transporter.verify((error, success) => {
     }
 })
 
-contactRouter.post('/info', (req, res) => {
+contactRouter.post('/', (req, res) => {
     const { name, email, message } = req.body
 
     let content = `name: ${name} \n email: ${email} \n message: ${message}`

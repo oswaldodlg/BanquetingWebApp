@@ -21,22 +21,28 @@ export default function Register() {
         e.preventDefault();
         try {
             const newUser = {email, password, passwordCheck, displayName};
-            await Axios.post(
+            const RegisterRes= await Axios.post(
                 "/users/register", 
                 newUser
             );
-            const loginRes = await Axios.post(
-                "/users/login",
-                {
-                    email,
-                    password,
-                });
-            setUserData({
-                token: loginRes.data.token,
-                user: loginRes.data.user,
-            });
-            localStorage.setItem("auth-token", loginRes.data.token);
-            history.push("/");
+            let user = RegisterRes.data
+            console.log(user.email)
+            console.log(RegisterRes.data._id)
+            const EmailRes= await Axios.post(
+                '/confirmation', 
+                {email: user.email, id: user._id});
+            // const loginRes = await Axios.post(
+            //     "/users/login",
+            //     {
+            //         email,
+            //         password,
+            //     });
+            // setUserData({
+            //     token: loginRes.data.token,
+            //     user: loginRes.data.user,
+            // });
+            // localStorage.setItem("auth-token", loginRes.data.token);
+            history.push("/login");
         } catch (err){
             err.response.data.msg && setError(err.response.data.msg);
         }

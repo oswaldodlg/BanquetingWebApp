@@ -41,3 +41,4 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
 
 app.use("/users", require("./routes/userRouter"))
 app.use("/info", require("./routes/contactFormRouter"))
+app.use("/confirmation", require("./routes/emailConfirmation"))
