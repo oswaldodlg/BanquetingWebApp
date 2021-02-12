@@ -26,22 +26,10 @@ export default function Register() {
                 newUser
             );
             let user = RegisterRes.data
-            console.log(user.email)
-            console.log(RegisterRes.data._id)
             const EmailRes= await Axios.post(
                 '/confirmation', 
                 {email: user.email, id: user._id});
-            // const loginRes = await Axios.post(
-            //     "/users/login",
-            //     {
-            //         email,
-            //         password,
-            //     });
-            // setUserData({
-            //     token: loginRes.data.token,
-            //     user: loginRes.data.user,
-            // });
-            // localStorage.setItem("auth-token", loginRes.data.token);
+            console.log(EmailRes)
             history.push("/login");
         } catch (err){
             err.response.data.msg && setError(err.response.data.msg);

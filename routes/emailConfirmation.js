@@ -25,7 +25,6 @@ emailConfirmationRouter.post('/', (req, res) => {
 
     let link = `https://banqueting.herokuapp.com/confirmation/:${id}`
     let content = `Favor de verificar tu email haciendo click en el siguiente link ${link}`
-     console.log(email)
 
     let mail = {
         to: email, 
