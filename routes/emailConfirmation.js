@@ -28,8 +28,8 @@ emailConfirmationRouter.post('/', (req, res) => {
      console.log(email)
 
     let mail = {
-        to: `${email}`, 
-        from:  process.env.EMAIL2,
+        to: email, 
+        from:  'Pagina Banqueting',
         subject: "Verificación de tu correo para iniciar sesión en BanquetingEventos.com",
         text: content
     }
