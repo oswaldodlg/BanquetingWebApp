@@ -51,7 +51,9 @@ emailConfirmationRouter.post('/', (req, res) => {
 emailConfirmationRouter.put('/:id', async (req, res) => {
     try {
         let id = req.params.id
-        const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new:true}, {useFindAndModify: false})
+        const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new:true})
+        const savedUser = await updateResponse.save()
+        res.json(savedUser);
     } catch (err){
         res.status(500).json({ error: err.message })
     }   
