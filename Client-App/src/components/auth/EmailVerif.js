@@ -11,7 +11,7 @@ export default function EmailVerif() {
     const history = useHistory();
     const verifResponse = async () => {
         try {
-            await Axios.get(
+            await Axios.patch(
                 `/confirmation/${id}`,
             )
         } catch(err){
