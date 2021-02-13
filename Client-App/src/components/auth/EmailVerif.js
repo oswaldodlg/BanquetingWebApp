@@ -6,7 +6,7 @@ import Axios from 'axios';
 
 export default function EmailVerif() {
 
-    let id = useParams();
+    let {id} = useParams();
     
     const history = useHistory();
     const verifResponse = async () => {
@@ -15,12 +15,13 @@ export default function EmailVerif() {
                 `/confirmation/${id}`,
             )
         } catch(err){
-            console.log(err)
+            console.log(err.response.data)
         } 
     }
 
+
     useEffect(() => {
-        verifResponse()
+        verifResponse().then(history.push('/login'))
       }, [id]);
 
     
