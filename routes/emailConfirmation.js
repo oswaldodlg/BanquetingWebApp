@@ -48,7 +48,7 @@ emailConfirmationRouter.post('/', (req, res) => {
     })
 })
 
-emailConfirmationRouter.patch('/:id', async (req, res) => {
+emailConfirmationRouter.put('/:id', async (req, res) => {
     try {
         let id = req.params.id
         const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new:true}, {useFindAndModify: false})
