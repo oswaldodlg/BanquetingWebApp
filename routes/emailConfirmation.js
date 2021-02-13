@@ -33,12 +33,6 @@ emailConfirmationRouter.post('/', (req, res) => {
         subject: "Verifica tu email para iniciar sesión en BanquetingEventos.com",
         text: content
     }
-
-    // if (link.click()) {
-    //        User.findByIdAndUpdate(id, {verified: true}, {new: true} )
-    //        res.redirect('https://banqueting.herokuapp.com/login');
-    // }
-
     transporter.sendMail(mail, (err, data) => {
         if (err){
            res.json({status: "Email not sent"})

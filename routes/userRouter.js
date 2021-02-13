@@ -13,8 +13,8 @@ userRouter.post("/register", async (req, res) => {
 
         if (!email || !password || !passwordCheck)
             return res.status(400).json({msg: "Not all fields have been entered"});
-        // if (!email.match(regex))
-        //     return res.status(400).json({msg: 'Invalid email'});
+        if (!email.match(regex))
+            return res.status(400).json({msg: 'Invalid email'});
         if (password.length < 5)
             return res.status(400).json({msg: "The password needs to be at least 5 characters long"});
         if (password !== passwordCheck)
