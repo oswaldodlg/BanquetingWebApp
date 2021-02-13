@@ -16,6 +16,7 @@ import PhotoApp from './components/pages/Photo-app/PhotoApp';
 import Info from './components/pages/Info/Info';
 import UpdatePassword from './components/auth/UpdatePassword';
 import ResetPassword from './components/auth/ResetPassword';
+import EmailVerif from './components/auth/EmailVerif';
 
 
 export default function App() {
@@ -77,6 +78,7 @@ export default function App() {
                     <Route path="/Register" component={Register} />
                     <Route path="/Experiencias" component={PhotoApp} />
                     <Route path="/Info" component={Info} /> 
+                    <Route path="/confirmation/:id" component={EmailVerif} /> 
                     <ReviewContext.Provider value = {{updateInfo, setUpdateInfo}}>
                         <Route path="/update" component={UpdatePassword} />
                         <Route path="/resetPassword" component={ResetPassword} />

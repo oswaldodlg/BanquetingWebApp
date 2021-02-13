@@ -15,8 +15,6 @@ export default function ResetPassword() {
     const {updateInfo, setUpdateInfo} = useContext(ReviewContext);
     const history = useHistory(); 
 
-    console.log(updateInfo)
-
 
     const submit = async (e) => {
         e.preventDefault();
