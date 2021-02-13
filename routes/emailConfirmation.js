@@ -52,6 +52,7 @@ emailConfirmationRouter.get('/:id', async (req, res) => {
     try {
         let id = req.params.id
         const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new:true}, {useFindAndModify: false})
+        res.redirect('https://banqueting.herokuapp.com/login')
     } catch (err){
         res.status(500).json({ error: err.message })
     }   

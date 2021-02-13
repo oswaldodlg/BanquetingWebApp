@@ -21,7 +21,6 @@ export default function EmailVerif() {
 
     useEffect(() => {
         verifResponse()
-        if (verifResponse){history.push('/login')}
       }, []);
 
     
