@@ -20,7 +20,7 @@ export default function EmailVerif() {
     }
 
     useEffect(() => {
-        verifResponse()
+        verifResponse().then(history.push('/login'))
       }, []);
 
     
