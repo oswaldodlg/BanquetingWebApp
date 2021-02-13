@@ -50,8 +50,8 @@ emailConfirmationRouter.post('/', (req, res) => {
 
 emailConfirmationRouter.get('/:id', async (req, res) => {
     try {
-        id = req.params.id
-    const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new: true})
+        const id = req.params.id
+        const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new: true})
     } catch (err){
         res.status(500).json({ error: err.message })
     }   
