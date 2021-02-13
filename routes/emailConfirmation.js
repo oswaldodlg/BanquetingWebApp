@@ -55,7 +55,7 @@ emailConfirmationRouter.get('/:id', async (req, res) => {
     } catch (err){
         res.status(500).json({ error: err.message })
     }   
-    res.redirect('https://banqueting.herokuapp.com/login')
+    return res.redirect('https://banqueting.herokuapp.com/login')
 })
 
 module.exports = emailConfirmationRouter;
