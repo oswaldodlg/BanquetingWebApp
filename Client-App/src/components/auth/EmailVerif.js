@@ -8,7 +8,7 @@ export default function EmailVerif() {
     const history = useHistory();
     const verifResponse = async () => {
         try {
-            await Axios.put(
+            await Axios.get(
                 "/confirmation/:id"
             )
             history.push("/login");
