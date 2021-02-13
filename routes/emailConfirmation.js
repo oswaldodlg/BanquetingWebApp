@@ -28,7 +28,7 @@ emailConfirmationRouter.post('/', (req, res) => {
 
     let mail = {
         to: email, 
-        from:  'Pagina Banqueting',
+        from:  'paginabanqueting@outlook.com',
         subject: "Verificación de tu correo para iniciar sesión en BanquetingEventos.com",
         text: content
     }
