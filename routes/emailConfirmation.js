@@ -23,7 +23,7 @@ transporter.verify((error, success) => {
 emailConfirmationRouter.post('/', (req, res) => {
     const { email, id } = req.body
 
-    let link = `https://banqueting.herokuapp.com/confirmation/:${id}`
+    let link = `https://banqueting.herokuapp.com/confirmation/${id}`
     let content = `Favor de verificar tu email haciendo click en el siguiente link ${link}`
 
     console.log(email)
@@ -50,8 +50,8 @@ emailConfirmationRouter.post('/', (req, res) => {
 
 emailConfirmationRouter.get('/:id', async (req, res) => {
     try {
-        const id = req.params.id
-        const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new: true})
+        let id = req.params.id
+        const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {useFindAndModify: false})
     } catch (err){
         res.status(500).json({ error: err.message })
     }   
