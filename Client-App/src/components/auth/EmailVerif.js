@@ -20,7 +20,8 @@ export default function EmailVerif() {
     return (
         <div>
            Your email is being verified 
-           {verifResponse && <Spinner />}
+           {verifResponse()}
+           {!verifResponse && <Spinner />}
         </div>
     )
 }
