@@ -30,13 +30,13 @@ emailConfirmationRouter.post('/', (req, res) => {
     let mail = {
         from:  'paginabanqueting@outlook.com',
         to: email, 
-        subject: "Verificación de tu correo para iniciar sesión en BanquetingEventos.com",
+        subject: "Verifica tu email para iniciar sesión en BanquetingEventos.com",
         text: content
     }
 
-    // if (link) {
-    //     User.findByIdAndUpdate(id, {verified: true} )
-    //     res.redirect('http://localhost:3000/login');
+    // if (link.click()) {
+    //        User.findByIdAndUpdate(id, {verified: true}, {new: true} )
+    //        res.redirect('https://banqueting.herokuapp.com/login');
     // }
 
     transporter.sendMail(mail, (err, data) => {
@@ -49,9 +49,12 @@ emailConfirmationRouter.post('/', (req, res) => {
 })
 
 emailConfirmationRouter.get('/:id', async (req, res) => {
-    id = req.params.id
+    try {
+        id = req.params.id
     const updateResponse = await User.findByIdAndUpdate(id, {verified: true}, {new: true})
-    if (updateResponse)
+    } catch (err){
+        res.status(500).json({ error: err.message })
+    }   
     res.redirect('https://banqueting.herokuapp.com/login')
 })
 
