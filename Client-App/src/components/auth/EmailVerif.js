@@ -8,7 +8,7 @@ export default function EmailVerif() {
     const history = useHistory();
     const verifResponse = async () => {
         try {
-            await Axios.get(
+            await Axios.put(
                 "/confirmation/:id"
             )
             history.push("/login");
@@ -20,7 +20,7 @@ export default function EmailVerif() {
     return (
         <div>
            Your email is being verified 
-           {!verifResponse && <Spinner />}
+           {verifResponse && <Spinner />}
         </div>
     )
 }
