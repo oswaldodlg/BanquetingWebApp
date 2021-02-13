@@ -6,7 +6,7 @@ import Axios from 'axios';
 
 export default function EmailVerif() {
 
-    let {id} = useParams();
+    let id = useParams();
     
     const history = useHistory();
     const verifResponse = async () => {
